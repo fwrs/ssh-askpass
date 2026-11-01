@@ -1,0 +1,36 @@
+{
+  "default-configuration": "Release",
+  "configurations": [
+    "Release",
+  ],
+  "localizations": {
+    "development": "en",
+  },
+  "files": [
+    { "kind": "folder", "path": "ssh-askpass", "target-membership": [ "ssh-askpass" ] },
+    { "kind": "group", "name": "Products" },
+  ],
+  "targets": [
+    {
+      "name": "ssh-askpass",
+      "id": "A10000000000000000000006",
+      "product-type": "tool",
+      "build-phases": [
+        "compile-sources",
+      ],
+      "build-settings": {
+        "MACOSX_DEPLOYMENT_TARGET": "27.2",
+      },
+    },
+  ],
+  "build-settings": {
+    "ALWAYS_SEARCH_USER_PATHS": "NO",
+    "CODE_SIGNING_ALLOWED": "NO",
+    "MACOSX_DEPLOYMENT_TARGET": "27.2",
+    "PRODUCT_NAME": "$(TARGET_NAME)",
+    "SWIFT_APPROACHABLE_CONCURRENCY": "YES",
+    "SWIFT_VERSION": "6.0",
+  },
+  "last-upgrade": "27.2",
+  "last-swift-update": "27.2",
+}
