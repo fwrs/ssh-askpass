@@ -6,7 +6,7 @@
     <string>io.fwrs.ssh-askpass</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/usr/bin/true</string>
+        <string>/usr/X11R6/bin/ssh-askpass</string>
     </array>
     <key>Sockets</key>
     <dict>
